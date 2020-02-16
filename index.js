@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
+PORT = process.env.PORT || 3000;
 
 app.use(cors());
 const router = express.Router();
@@ -35,6 +36,4 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("ubereats-demo-api listening on port 3000!");
-});
+app.listen(PORT, () => console.log(`Server running on ${PORT} 💪👌`));
