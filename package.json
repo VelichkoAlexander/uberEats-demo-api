@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "deploy": "now --public -e BUILD_DATE=$(date +%Y%m%d%H%M) -e NODE_ENV=production",
+    "parse": "node parse.js"
   },
   "author": "Alexsander Velichko",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "debug": "^4.1.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.5"
   }
