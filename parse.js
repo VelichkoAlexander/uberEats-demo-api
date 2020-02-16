@@ -18,7 +18,7 @@ const parse = async () => {
   cafeCard.each((id, card) => {
     let domCard = $(card);
     api.push({
-      id,
+      id: id + 1,
       title: domCard.find(".cafe-card__title").text(),
       type: domCard.find(".cafe-card__subtitle").text(),
       img: domCard
@@ -37,7 +37,7 @@ const parse = async () => {
         .replace(/\D/g, "")
     });
 
-    storeData(api, "./data/output.json");
+    storeData(api, "./data/places.json");
   });
 };
 
