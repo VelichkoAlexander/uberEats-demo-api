@@ -20,7 +20,7 @@ Returns json data about a restorans places.
 - **Code**: 200
 - **Content**:
 
-```javascript
+```
 {
   "id":10,
   "title" : "Маоедун",
