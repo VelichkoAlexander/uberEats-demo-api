@@ -1,15 +1,16 @@
 {
   "name": "ubereats-demo-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Not real API of UberEats",
+  "author": "Alexander Velichko",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "deploy": "now --public -e BUILD_DATE=$(date +%Y%m%d%H%M) -e NODE_ENV=production",
     "parse": "node parse.js"
   },
-  "author": "Alexsander Velichko",
-  "license": "MIT",
+
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "cors": "^2.8.5",
